@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+// Tutorial: https://www.youtube.com/watch?v=NO7_jgzVgbc&ab_channel=TraversyMedia
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import './App.css';
+
+import Home from "./components/Home";
+import About from "./components/About";
+import NavBar from "./components/NavBar";
+import Project from "./components/NavBar"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <NavBar />
+      <Switch>
+        <Route component = {Home} path='/' exact />
+        <Route component = {About} path='/about' />
+        <Route component = {Project} path='/project' />
+        
+
+      </Switch>
+  </BrowserRouter>
+
+  )
+  
 }
 
 export default App;
