@@ -16,9 +16,13 @@ export default function NavBar() {
                     <NavLink to="/project" className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800">
                         Project
                     </NavLink>
+                    <NavLink to="/post" className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800">
+                        Post
+                    </NavLink>
                     
                 </nav>
-                <div>
+                <div className=" inline-flex py-3 px-3">
+                    <SocialIcon url="https://www.linkedin.com/in/xiomara-masmela/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}} />
 
                 </div>
 
