@@ -32,7 +32,7 @@ export default function Project() {
                 { projectData &&
                 projectData.map((project, index) => (
                 <article>
-                    <Link to={"/post"+ project.slug.current} key={project.slug.current}>
+                    <Link to={"/project/"+ project.slug.current} key={project.slug.current}>
                         <span className="block h-64 relative rounded shadow " key={index}>
                             <img src={project.mainImage?.asset.url}/>
                             <span>

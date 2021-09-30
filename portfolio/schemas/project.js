@@ -38,9 +38,8 @@ export default {
         of: [{type: 'reference', to: {type: 'category'}}],
       },
       {
-        name: 'publishedAt',
-        title: 'Published at',
-        type: 'datetime',
+        name: "link",
+        type: "url",
       },
       {
         name: 'body',

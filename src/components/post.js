@@ -32,7 +32,7 @@ export default function Post() {
                     { postData &&
                      postData.map((post, index) => (
                     <article>
-                        <Link to={"/post"+ post.slug.current} key={post.slug.current}>
+                        <Link to={"/post/"+ post.slug.current} key={post.slug.current}>
                             <span className="block h-64 relative rounded shadow " key={index}>
                                 <img src={post.mainImage?.asset.url}/>
                                 <span>

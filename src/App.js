@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import Project from "./components/Project"
 import Post from "./components/Post"
 import SinglePost from "./components/SinglePost"
+import SingleProject from "./components/SingleProject"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route component = {About} path='/about' />
         <Route component = {SinglePost} path='/post/:slug' />
         <Route component = {Post} path='/post' />
+        <Route component = {SingleProject} path='/project/:slug' />
         <Route component = {Project} path='/project' />
       </Switch>
   </BrowserRouter>
