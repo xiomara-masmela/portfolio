@@ -9,6 +9,9 @@
 body {
     background-color: #F8F3EC;
 }
+p {
+    margin-bottom: 32px;
+}
 
 
 .section-bg:after {

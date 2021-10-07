@@ -28,7 +28,8 @@ export default function SingleProject() {
                 },
                 body,
                 "name": author -> name,
-                "authorImage": author -> image
+                "authorImage": author -> image,
+                link
             }`
             )
             .then((data) => setSingleProject(data[0]))
@@ -38,27 +39,31 @@ export default function SingleProject() {
     if (!SingleProject) return <div>Loading...</div>
     
     return(
-        <main>
-            <article>
-                <header>
-                    <div>
-                        <h1>{SingleProject.title}</h1>
-                        <div>
-                            <img src={urlFor(SingleProject?.authorImage).url()} alt={SingleProject.name} />
-                            <p>{SingleProject.name}</p>
-                        </div>
+        <main className="container flex justify-center mx-auto py-8">
+            <article className="grid w-full">
+                <header className="relative">
+                    <div className="py-8">
+                        <h1 className="font-bold font-title text-xxl my-5">{SingleProject.title}</h1>
+                        <a href={SingleProject.link} target="_blank" className="text-orange bold font-mono uppercase">Demo</a>
+                        
+
                     </div>
                 </header>
-                <div>
-                    <img src={SingleProject.mainImage?.asset.url} />
+                
+                <div className="content flex">
+                    <div className="leading-loose mr-4 grid lg:grid-cols-6">
+                        <BlockContent 
+                        blocks={SingleProject.body} 
+                        projectId="b7xqrihy" 
+                        dataset="production" 
+                        /> 
+                    </div>
+                    
+                    <aside className="grid lg:grid-cols-4">
+                        <img className="w-full h-98 object-cover" src={SingleProject.mainImage?.asset.url} />
+                </aside>  
                 </div>
-                <div>
-                    <BlockContent 
-                    blocks={SingleProject.body} 
-                    projectId="b7xqrihy" 
-                    dataset="production" 
-                    />   
-                </div>
+                
             </article>
         </main>
     )
