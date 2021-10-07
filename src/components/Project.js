@@ -24,20 +24,19 @@ export default function Project() {
         .catch(console.error)
     }, []);
     return (
-    <main>
+    <main className="h-screen">
         <section className="container mx-auto">
-            <h1>Projects baby</h1>
+            <h1 className="text-center font-title  text-xl uppercase bold my-8 ">Projects</h1>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
                 { projectData &&
                 projectData.map((project, index) => (
                 <article>
                     <Link to={"/project/"+ project.slug.current} key={project.slug.current}>
-                        <span className="block h-64 relative rounded shadow " key={index}>
-                            <img src={project.mainImage?.asset.url}/>
-                            <span>
-                                <h3>{project.title}</h3>
-                            </span>
+                        <span className="block h-64 relative " key={index}>
+                            <img width='405' height='384' className="h-96 object-cover w-full rounded-2xl" src={project.mainImage?.asset.url}/>
+                            <h3 className="font-mono text-lg my-2 text-red font-semibold">{project.title}</h3>
+                            
                         </span>
                     </Link>
                 </article>

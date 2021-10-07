@@ -4,27 +4,31 @@ import { SocialIcon } from "react-social-icons"
 
 export default function NavBar() {
     return (
-        <header className="bg-red-600">
-            <div className="container mx-auto flex justify-between">
-                <nav className="flex">
-                    <NavLink className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800" activeClassName="text-white" to="/" exact> 
+        <header className="" >
+            <div className="container mx-auto flex justify-between items-center">
+                <div className="logo">
+                <NavLink className="inflex-flex items-center py-6 px-3 mr-4 text-black" activeClassName="text-white" to="/" exact> 
                         Home
                     </NavLink>
-                    <NavLink to="/about" className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800">
-                        About
+                    
+                </div>
+                <nav className="flex items-center justify-between p-6">
+                    
+                    <NavLink to="/about" className="inflex-flex items-center py-6 px-3 mr-4 text-black-600 hover:text-green-800">
+                        About me
                     </NavLink>
-                    <NavLink to="/project" className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800">
-                        Project
+                    <NavLink to="/project" className="inflex-flex items-center py-6 px-3 mr-4 text-black-600 hover:text-green-800">
+                        Projects
                     </NavLink>
-                    <NavLink to="/post" className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800">
-                        Post
+                    <NavLink to="/post" className="inflex-flex items-center py-6 px-3 mr-4 text-black-600 hover:text-green-800">
+                        Blog
+                    </NavLink>
+                    <NavLink to="/post" className="inflex-flex items-center py-6 px-3 mr-4 text-black-600 hover:text-green-800">
+                        Contact me
                     </NavLink>
                     
                 </nav>
-                <div className=" inline-flex py-3 px-3">
-                    <SocialIcon url="https://www.linkedin.com/in/xiomara-masmela/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}} />
 
-                </div>
 
             </div>
             

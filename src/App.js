@@ -9,6 +9,7 @@ import Project from "./components/Project"
 import Post from "./components/Post"
 import SinglePost from "./components/SinglePost"
 import SingleProject from "./components/SingleProject"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -22,8 +23,11 @@ function App() {
         <Route component = {SingleProject} path='/project/:slug' />
         <Route component = {Project} path='/project' />
       </Switch>
+      
   </BrowserRouter>
 
+  
+  
   )
   
 }
