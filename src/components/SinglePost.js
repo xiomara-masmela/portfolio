@@ -38,27 +38,30 @@ export default function SinglePost() {
     if (!singlePost) return <div>Loading...</div>
     
     return(
-        <main>
-            <article>
-                <header>
-                    <div>
-                        <h1>{singlePost.title}</h1>
-                        <div>
-                            <img src={urlFor(singlePost?.authorImage).url()} alt={singlePost.name} />
-                            <p>{singlePost.name}</p>
+        <main className="container flex justify-center mx-auto py-8">
+            <article className="grid w-full">
+                <header className="relative">
+                    <div className="py-8" >
+                        <h1 className="font-bold font-title text-xxl my-5">{singlePost.title}</h1>
+                        <div className="flex items-center gap-x-10">
+                            <p className="bold font-mono text-lg">{singlePost.name}</p>
+                            <img className="w-32 h-32 rounded-full" src={urlFor(singlePost?.authorImage).url()} alt={singlePost.name} />
+                            
                         </div>
                     </div>
                 </header>
-                <div>
-                    <img src={singlePost.mainImage.asset.url} />
-                </div>
-                <div>
-                    <BlockContent 
-                    blocks={singlePost.body} 
-                    projectId="b7xqrihy" 
-                    dataset="production" 
-                    />   
-                </div>
+                <div className="content flex justify-between">
+                    <div className="leading-loose mr-4 w-2/4">
+                        <BlockContent 
+                        blocks={singlePost.body} 
+                        projectId="b7xqrihy" 
+                        dataset="production" 
+                        />   
+                    </div>
+                    <aside className="w-2/6">
+                        <img className="w-full h-auto object-cover" src={singlePost.mainImage?.asset.url} alt={singlePost.title}/>
+                    </aside>
+                </div>   
             </article>
         </main>
     )

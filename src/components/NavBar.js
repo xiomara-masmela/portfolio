@@ -23,15 +23,9 @@ export default function NavBar() {
                     <NavLink to="/post" className="inflex-flex items-center py-6 px-3 mr-4 text-black-600 hover:text-green-800">
                         Blog
                     </NavLink>
-                    <NavLink to="/post" className="inflex-flex items-center py-6 px-3 mr-4 text-black-600 hover:text-green-800">
-                        Contact me
-                    </NavLink>
                     
                 </nav>
-
-
             </div>
-            
         </header>
     )
 }

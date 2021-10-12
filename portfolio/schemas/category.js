@@ -13,5 +13,11 @@ export default {
       title: 'Description',
       type: 'text',
     },
+    {
+      name: 'subcategories',
+      title: 'Sub Categories',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'category'}}]
+    }
   ],
 }

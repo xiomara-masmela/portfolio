@@ -24,20 +24,17 @@ export default function Post() {
     }, []);
     
     return (
-        <main>
+        <main className="h-screen">
             <section className="container mx-auto">
-                <h1>Blog Post page</h1>
-                adokgr
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h1 className="text-center font-title  text-xxl uppercase bold my-8 ">Blog</h1>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-2 pt-6">
                     { postData &&
                      postData.map((post, index) => (
                     <article>
                         <Link to={"/post/"+ post.slug.current} key={post.slug.current}>
-                            <span className="block h-64 relative rounded shadow " key={index}>
-                                <img src={post.mainImage?.asset.url}/>
-                                <span>
-                                    <h3>{post.title}</h3>
-                                </span>
+                            <span className="block h-64 relative" key={index}>
+                                <img width='405' height='384' className="h-96 object-cover w-full rounded-2xl" src={post.mainImage?.asset.url}/>
+                                <h3 className="font-mono text-lg my-2 text-red font-semibold">{post.title}</h3>
                             </span>
                         </Link>
                     </article>

@@ -36,32 +36,36 @@ export default function SingleProject() {
             .catch(console.error);
     }, [slug]);
 
-    if (!SingleProject) return <div>Loading...</div>
+    if (!SingleProject) return (
+        <main className="container flex justify-center mx-auto py-8">
+            <p>Loading...</p>
+        </main>
+    )
     
     return(
-        <main className="container flex justify-center mx-auto py-8">
-            <article className="grid w-full">
-                <header className="relative">
+        <main className="container flex justify-center mx-auto pt-10 pb-60">
+            <article className="grid w-4/5">
+                <header className="relative bg-pink">
                     <div className="py-8">
-                        <h1 className="font-bold font-title text-xxl my-5">{SingleProject.title}</h1>
-                        <a href={SingleProject.link} target="_blank" className="text-orange bold font-mono uppercase">Demo</a>
+                        <h1 className="text-center font-bold font-title text-xxl my-5">{SingleProject.title}</h1>
                         
-
                     </div>
                 </header>
                 
-                <div className="content flex">
-                    <div className="leading-loose mr-4 grid lg:grid-cols-6">
+                <div className="content w-3/5 mx-auto mt-4 pt-10">
+                    <div className="leading-loose mr-4">
+                    <a href={SingleProject.link} target="_blank" className="text-orange bold font-mono uppercase">Demo</a>
                         <BlockContent 
                         blocks={SingleProject.body} 
                         projectId="b7xqrihy" 
                         dataset="production" 
                         /> 
-                    </div>
+                </div>
                     
-                    <aside className="grid lg:grid-cols-4">
-                        <img className="w-full h-98 object-cover" src={SingleProject.mainImage?.asset.url} />
-                </aside>  
+                    <aside className="">
+                        <img className="w-84 h-98 object-cover" src={SingleProject.mainImage?.asset.url} alt={SingleProject.title}/>
+                    </aside> 
+                     
                 </div>
                 
             </article>
