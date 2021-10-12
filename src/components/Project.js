@@ -10,6 +10,7 @@ export default function Project() {
         sanityClient
         .fetch(
             `*[_type == "project"]{
+            id,
             title,
             slug,
             mainImage {
@@ -35,7 +36,7 @@ export default function Project() {
                     <Link to={"/project/"+ project.slug.current} key={project.slug.current}>
                         <span className="block h-64 relative " key={index}>
                             <img width='405' height='384' className="h-96 object-cover w-full rounded-2xl" src={project.mainImage?.asset.url}/>
-                            <h3 className="font-mono text-lg my-2 text-red font-semibold">{project.title}</h3>
+                            <h3 className="font-mono text-lg my-2 text-pink font-semibold">{project.title}</h3>
                             
                         </span>
                     </Link>

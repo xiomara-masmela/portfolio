@@ -22,6 +22,12 @@ module.exports = {
         DEFAULT: '#F28F6B'
       }
     },
+    textColor: theme => theme('colors'),
+     textColor: {
+       'black': '#0e0e0e',
+       'pink': '#F28585',
+       'red': '#F28F6B',
+     },
     fontFamily: {
       'mono': ['Roboto Mono', 'monospace'],
       'sans': ['Rubik', 'sans-serif'],
