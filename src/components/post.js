@@ -33,7 +33,7 @@ export default function Post() {
                     <article>
                         <Link to={"/post/"+ post.slug.current} key={post.slug.current}>
                             <span className="block h-64 relative" key={index}>
-                                <img width='405' height='384' className="h-96 object-cover w-full rounded-2xl" src={post.mainImage?.asset.url}/>
+                                <img width='405' height='384' className="h-96 object-cover w-full rounded-2xl" src={post.mainImage?.asset.url} alt={post.title} />
                                 <h3 className="font-mono text-lg my-2 text-red font-semibold hover:text-black transition-all delay-75">{post.title}</h3>
                             </span>
                         </Link>
