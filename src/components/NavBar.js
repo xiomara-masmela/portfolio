@@ -9,7 +9,7 @@ export default function NavBar() {
             <div className="container mx-auto flex justify-between items-center">
                 <div className="logo">
                 <NavLink className="inflex-flex items-center py-6 px-3 mr-4 text-black hover:text-red-500"  to="/" exact> 
-                        <a><img src={logo} className="w-32 h-32 object-cover" alt="logo" />  </a>
+                        <img src={logo} className="w-32 h-32 object-cover" alt="logo" />
                 </NavLink>
                     
                 </div>
