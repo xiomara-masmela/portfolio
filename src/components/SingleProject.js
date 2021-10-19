@@ -8,6 +8,7 @@ const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
     return builder.image(source)
 }
+urlFor()
 
 export default function SingleProject() {
     const [SingleProject, setSingleProject] = useState(null)
