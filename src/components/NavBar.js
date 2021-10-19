@@ -27,9 +27,9 @@ export default function NavBar() {
                     
                 </nav>
                 <div>
-                    <SocialIcon url="https://www.linkedin.com/in/xiomara-masmela/" className="mr-4" target="_blank" fgColor="transparent" style={{height: 35, width: 35}} />
-                    <SocialIcon url="https://github.com/xiomara-masmela" className="mr-4" target="_blank" fgColor="transparent" style={{height: 35, width: 35}} />
-                    <SocialIcon url="mailto:xiomara.masmela@gmail.com" className="mr-4" target="_blank" fgColor="transparent" bgColor="#F28F6B" style={{height: 35, width: 35}} />
+                    <SocialIcon url="https://www.linkedin.com/in/xiomara-masmela/" className="mr-4" target="_blank" rel="noreferrer" fgColor="transparent" style={{height: 35, width: 35}} />
+                    <SocialIcon url="https://github.com/xiomara-masmela" className="mr-4" target="_blank" rel="noreferrer" fgColor="transparent" style={{height: 35, width: 35}} />
+                    <SocialIcon url="mailto:xiomara.masmela@gmail.com" className="mr-4" target="_blank" rel="noreferrer" fgColor="transparent" bgColor="#F28F6B" style={{height: 35, width: 35}} />
                 </div>
             </div>
         </header>
