@@ -8,9 +8,9 @@ export default function NavBar() {
         <header className="" >
             <div className="container mx-auto flex justify-between items-center">
                 <div className="logo">
-                <NavLink className="inflex-flex items-center py-6 px-3 mr-4 text-black hover:text-red-500" activeClassName="text-white" to="/" exact> 
+                <NavLink className="inflex-flex items-center py-6 px-3 mr-4 text-black hover:text-red-500"  to="/" exact> 
                         <a><img src={logo} className="w-32 h-32 object-cover" alt="logo" />  </a>
-                    </NavLink>
+                </NavLink>
                     
                 </div>
                 <nav className="flex items-center justify-between p-6">
