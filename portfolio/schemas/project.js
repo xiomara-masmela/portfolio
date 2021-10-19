@@ -42,6 +42,31 @@ export default {
         type: "url",
       },
       {
+        name: "tags",
+        type: "array",
+        of: [
+          {
+            type: "string",
+
+          }
+        ],
+        options: {
+          layout: "tags"
+        }
+      },
+      {
+        name:"projectType",
+        title: "Project Type",
+        type: "string",
+        options: {
+          list: [
+            {value: "course", title: "Course"},
+            {value: "client", title: "Client"},
+            
+          ]
+        }
+      },
+      {
         name: 'body',
         title: 'Body',
         type: 'blockContent',

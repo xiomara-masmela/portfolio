@@ -31,10 +31,10 @@ export default function About() {
                 <h1 className=" text-center text-xxl font-title uppercase bold my-8 ">Hey There!</h1>
             </section>
             <section className="w-4/5 relative">
-                <div className="absolute right-1/4">
+                <div className="absolute left-0">
                     <img className="w-32 h-32 rounded-full " src={urlFor(author.authorImage).url()} alt={author.name} />
                 </div>
-                <div className="w-4/5 pt-36">
+                <div className=" leading-loose w-4/5 pt-36">
                     <BlockContent 
                         blocks={author.bio} 
                         projectId="b7xqrihy" 
