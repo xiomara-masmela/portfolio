@@ -9,7 +9,7 @@ import Project from "./components/Project"
 import Post from "./components/Post"
 import SinglePost from "./components/SinglePost"
 import SingleProject from "./components/SingleProject"
-import Footer from "./components/Footer"
+// import Footer from "./components/Footer"
 
 function App() {
   return (

@@ -54,7 +54,7 @@ export default function SingleProject() {
                 
                 <div className="content w-3/5 mx-auto mt-4 pt-10">
                     <div className="leading-loose mr-4">
-                    <a href={SingleProject.link} target="_blank" className="text-orange bold font-mono uppercase text-red hover:text-black transition-all delay-75">Demo</a>
+                    <a href={SingleProject.link} target="_blank" rel="noreferrer" className="text-orange bold font-mono uppercase text-red hover:text-black transition-all delay-75">Demo</a>
                         <BlockContent 
                         blocks={SingleProject.body} 
                         projectId="b7xqrihy" 
