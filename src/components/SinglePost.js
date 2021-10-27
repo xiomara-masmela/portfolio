@@ -42,7 +42,7 @@ export default function SinglePost() {
             <article className="grid w-full">
                 <header className="relative">
                     <div className="py-8" >
-                        <h1 className="font-bold font-title text-xxl my-5">{singlePost.title}</h1>
+                        <h1 className="font-bold font-title md:text-xxl my-5">{singlePost.title}</h1>
                         <div className="flex items-center gap-x-10">
                             <p className="bold font-mono text-lg">{singlePost.name}</p>
                             <img className="w-32 h-32 rounded-full" src={urlFor(singlePost?.authorImage).url()} alt={singlePost.name} />

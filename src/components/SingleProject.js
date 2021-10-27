@@ -48,7 +48,7 @@ export default function SingleProject() {
             <article className="grid w-4/5">
                 <header className="relative bg-pink">
                     <div className="py-8">
-                        <h1 className="text-center font-bold font-title text-xxl my-5">{SingleProject.title}</h1>
+                        <h1 className="text-center font-bold font-title md:text-xxl my-5">{SingleProject.title}</h1>
                         
                     </div>
                 </header>

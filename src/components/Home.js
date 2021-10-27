@@ -28,7 +28,7 @@ export default function Home() {
         <main className="container mx-auto home relative min-h-screen" >
             <section className="relative flex justify-between h-full bg-pink transition-all backdrop-filter backdrop-hue-rotate-15 ">
                 <div className="grid-cols-8 px-8 py-8 flex justify-center flex-col w-full relative border-0 ">
-                    <h1 className=" text-center title-home text-xxl bold uppercase font-title">Hi! <br></br>I'm Xiomara</h1>
+                    <h1 className=" text-center title-home md:text-xxl bold uppercase font-title">Hi! <br></br>I'm Xiomara</h1>
                     <p className=" text-center text-sm uppercase font-mono">Software Engineer</p>
                 </div>
             </section>

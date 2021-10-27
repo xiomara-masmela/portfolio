@@ -28,7 +28,7 @@ export default function Project() {
     return (
     <main className="h-screen">
         <section className="container mx-auto">
-            <h1 className="text-center font-title  text-xxl uppercase bold my-8 ">Projects</h1>
+            <h1 className="text-center font-title  md:text-xxl uppercase bold my-8 ">Projects</h1>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3  gap-8 mt-2 pt-6">
                 { projectData &&
