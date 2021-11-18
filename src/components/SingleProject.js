@@ -45,7 +45,7 @@ export default function SingleProject() {
     
     return(
         <main className="container flex justify-center mx-auto pt-10 pb-60">
-            <article className="grid w-4/5">
+            <article className="grid sm:w-full md:w-4/5">
                 <header className="relative bg-pink">
                     <div className="py-8">
                         <h1 className="text-center font-bold font-title md:text-xxl my-5">{SingleProject.title}</h1>
@@ -53,7 +53,7 @@ export default function SingleProject() {
                     </div>
                 </header>
                 
-                <div className="content w-3/5 mx-auto mt-4 pt-10">
+                <div className="content sm:w-4/5 md:w-3/5 mx-auto mt-4 pt-10">
                     <div className="leading-loose mr-4">
                     <a href={SingleProject.link} target="_blank" rel="noreferrer" className="text-orange bold font-mono uppercase text-red hover:text-black transition-all delay-75">Demo</a>
                         <BlockContent 
